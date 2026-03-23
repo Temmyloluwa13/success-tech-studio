@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import './Testimonials.css';
 
@@ -48,7 +48,7 @@ const Testimonials: React.FC = () => {
     setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
-  const variants = {
+  const variants: Variants = {
     enter: (direction: number) => ({
       x: direction > 0 ? 1000 : -1000,
       opacity: 0,
