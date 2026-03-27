@@ -83,7 +83,7 @@ const Contact: React.FC = () => {
             <div className="social-links">
               <a href="#" className="social-icon" aria-label="Instagram"><FaInstagram size={20} /></a>
               <a href="https://www.linkedin.com/in/success-bolorunde-126b90295" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn"><FaLinkedinIn size={20} /></a>
-              <a href="#" className="social-icon" aria-label="WhatsApp"><FaWhatsapp size={20} /></a>
+              <a href="https://wa.me/2347034260241" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="WhatsApp"><FaWhatsapp size={20} /></a>
               <a href="https://www.pinterest.com/success_innovative_designs/?actingBusinessId=1078893791890554521" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Pinterest"><FaPinterest size={20} /></a>
               <a href="#" className="social-icon" aria-label="Upwork"><SiUpwork size={20} /></a>
             </div>
