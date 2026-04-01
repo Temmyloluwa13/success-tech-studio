@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
             ))}
           </ul>
           <Link to="/contact" className="btn btn-primary" id="navbar-hire-btn" style={{ padding: '8px 20px', fontSize: '0.9rem' }}>
-            Hire Me
+            Book a Call
           </Link>
         </div>
 
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
                   style={{ width: '100%', marginTop: '1rem' }}
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Hire Me
+                  Book a Call
                 </Link>
               </li>
             </ul>

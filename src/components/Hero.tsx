@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 import slideWeb from '../assets/banner_web.png';
@@ -91,12 +92,12 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-            <a href="#portfolio" className="btn btn-primary btn-glow">
+            <Link to="/portfolio" className="btn btn-primary btn-glow">
               View Portfolio <ArrowRight size={18} />
-            </a>
-            <a href="#contact" className="btn btn-outline">
-              Hire Me
-            </a>
+            </Link>
+            <Link to="/contact" className="btn btn-outline">
+              Book a Call
+            </Link>
           </motion.div>
         </motion.div>
       </div>

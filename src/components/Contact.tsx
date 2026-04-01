@@ -51,8 +51,14 @@ const Contact: React.FC = () => {
           >
             <h3 className="contact-headline">Ready to start your next big project?</h3>
             <p className="contact-subheadline">
-              Reach out today and let's craft an experience that elevates your brand to the next level.
+              Reach out today and let's craft an experience that elevates your brand to the next level. You can send me a message directly, or book a discovery call.
             </p>
+
+            <div className="contact-actions" style={{ marginTop: '20px', marginBottom: '30px' }}>
+              <a href="https://calendly.com/successbolorunde13/30min" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-glow" style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Phone size={18} style={{ marginRight: '10px' }} /> Schedule a Discovery Call
+              </a>
+            </div>
             
             <div className="contact-details">
               <div className="contact-item">

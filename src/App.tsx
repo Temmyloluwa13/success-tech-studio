@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Routes, Route } from 'react-router-dom'; // router check
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -106,6 +107,7 @@ const App: React.FC = () => {
             transition={{ duration: 0.5 }}
             key="content"
           >
+            <ScrollToTop />
             <Navbar />
             <main>
               <Routes>

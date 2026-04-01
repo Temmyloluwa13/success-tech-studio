@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { FaInstagram, FaLinkedinIn, FaWhatsapp, FaPinterest } from 'react-icons/fa';
 import { SiUpwork } from 'react-icons/si';
 import logoIcon from '../assets/logo_icon.svg';
@@ -15,10 +16,10 @@ const Footer: React.FC = () => {
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
-            <a href="#home" className="footer-logo">
+            <Link to="/" className="footer-logo">
               <img src={logoIcon} alt="Success Tech Studio" className="footer-logo-img" />
               <span className="text-gradient">Success Tech Studio</span>
-            </a>
+            </Link>
             <p className="footer-tagline">
               Building futuristic digital experiences that convert and inspire. Pushing the boundaries of web development, mobile apps, and vibe coding.
             </p>
@@ -35,10 +36,10 @@ const Footer: React.FC = () => {
             <div className="link-group">
               <h3>Quick Links</h3>
               <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">My Arsenal</a></li>
-                <li><a href="#portfolio">Featured Projects</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About Me</Link></li>
+                <li><a href="/#skills">My Arsenal</a></li>
+                <li><Link to="/portfolio">Featured Projects</Link></li>
               </ul>
             </div>
 
