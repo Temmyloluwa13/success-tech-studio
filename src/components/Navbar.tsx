@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom'; // router link check
 import logoIcon from '../assets/logo_icon.svg';
 import './Navbar.css';
 
@@ -17,18 +18,16 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Services', href: '#services' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
-        <a href="#home" className="logo">
+        <Link to="/" className="logo">
           <motion.img
             src={logoIcon}
             alt="Success Tech Studio Logo"
@@ -38,20 +37,20 @@ const Navbar: React.FC = () => {
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           />
           <span className="logo-text text-gradient">Success Tech Studio</span>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <div className="desktop-nav">
           <ul className="nav-links">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <a href={link.href} className="nav-link">{link.name}</a>
+                <Link to={link.href} className="nav-link">{link.name}</Link>
               </li>
             ))}
           </ul>
-          <a href="#contact" className="btn btn-primary" id="navbar-hire-btn" style={{ padding: '8px 20px', fontSize: '0.9rem' }}>
+          <Link to="/contact" className="btn btn-primary" id="navbar-hire-btn" style={{ padding: '8px 20px', fontSize: '0.9rem' }}>
             Hire Me
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu toggle */}
@@ -77,24 +76,24 @@ const Navbar: React.FC = () => {
             <ul className="mobile-nav-links">
               {navLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="mobile-nav-link"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  to="/contact"
                   className="btn btn-primary"
                   style={{ width: '100%', marginTop: '1rem' }}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Hire Me
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Routes, Route } from 'react-router-dom'; // router check
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -107,19 +108,40 @@ const App: React.FC = () => {
           >
             <Navbar />
             <main>
-              <Hero />
-              <About />
-              <Skills />
-              <Results />
-              <Services />
-              <Portfolio />
-              <CaseStudy />
-              <Testimonials />
-              <Process />
-              <Pricing />
-              <VideoSection />
-              <LeadMagnet />
-              <Contact />
+              <Routes>
+                {/* 1. HOME */}
+                <Route path="/" element={
+                  <>
+                    <Hero />
+                    <Skills />
+                    <Services />
+                    <Results />
+                    <Testimonials />
+                    <LeadMagnet />
+                  </>
+                } />
+
+                {/* 2. ABOUT */}
+                <Route path="/about" element={
+                  <>
+                    <About />
+                    <Process />
+                    <Pricing />
+                    <VideoSection />
+                  </>
+                } />
+
+                {/* 3. PORTFOLIO */}
+                <Route path="/portfolio" element={
+                  <>
+                    <Portfolio />
+                    <CaseStudy />
+                  </>
+                } />
+
+                {/* 4. CONTACT */}
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
             </main>
             <Footer />
           </motion.div>

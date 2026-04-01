@@ -205,6 +205,12 @@
   object-fit: cover;
 }
 
+.modal-img-full {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .modal-body {
   padding: 40px;
 }
@@ -246,12 +252,15 @@
   .modal-actions {
     flex-direction: column;
   }
+
   .modal-title {
     font-size: 2rem;
   }
+
   .modal-img {
     height: 250px;
   }
+
   .modal-body {
     padding: 24px;
   }

@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import './Hero.css';
 
-import slideWeb from '../assets/hero_slide_web_1774205377860.png';
-import slideMobile from '../assets/hero_slide_mobile_1774205397918.png';
-import slideAi from '../assets/hero_slide_ai_1774205417247.png';
-import slidePresentation from '../assets/hero_slide_presentation_1774205432870.png';
+import slideWeb from '../assets/banner_web.png';
+import slideMobile from '../assets/banner_mobile.png';
+import slideAi from '../assets/banner_ai.png';
+import slidePresentation from '../assets/banner_presentation.png';
 
 const slides = [
   { id: 1, image: slideWeb, alt: "Web Development" },
