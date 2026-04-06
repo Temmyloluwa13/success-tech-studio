@@ -40,9 +40,7 @@
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 40px;
-  perspective: 2000px;
-  padding: 20px 0;
+  gap: 30px;
 }
 
 .portfolio-card {
@@ -51,13 +49,6 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  transform-style: preserve-3d;
-  box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.4);
-  transition: box-shadow 0.4s ease;
-}
-
-.portfolio-card:hover {
-  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 240, 255, 0.2);
 }
 
 .portfolio-img-wrapper {

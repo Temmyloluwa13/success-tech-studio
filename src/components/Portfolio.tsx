@@ -59,24 +59,6 @@ const Portfolio: React.FC = () => {
 
   const projects: Project[] = [
     {
-      id: 34,
-      title: "Hotoh Business Agency",
-      category: "Web Development",
-      description: "A clean, modern light-theme website for a business consulting and digital agency.",
-      fullDescription: "Designed 'Hotoh', a comprehensive and ultra-modern business development agency website. The design features a pristine white and vibrant royal blue color palette to inspire trust and professionalism. The long-scroll layout seamlessly guides users from the Hero section ('Grow Your Business Online') down through the About team highlights, a detailed Services grid (SEO, Web Design, Marketing, Development), a minimalistic Portfolio showcase, and an integrated interactive Contact section.",
-      image: webDesignImg,
-      tools: ["React", "Tailwind CSS", "Figma", "Responsive Design"]
-    },
-    {
-      id: 33,
-      title: "Expert Digital Marketing Agency",
-      category: "Web Development",
-      description: "A dark-themed, highly responsive marketing agency website built for lead generation.",
-      fullDescription: "Designed an engaging digital marketing agency website featuring a striking dark aesthetic contrasted with energetic red branding. The multi-device responsive layout scales perfectly across desktop laptops, tablets, and smartphones. Key features include a sleek transparent navigation bar, structured service grids ('Lead Generation', 'Design and Development', 'Strategy', 'Tracking'), and optimized call-to-action buttons designed to maximize conversions.",
-      image: webDesignImg,
-      tools: ["React", "CSS Modules", "Responsive Design", "Figma"]
-    },
-    {
       id: 32,
       title: "Real Estate Pitch Deck",
       category: "Presentation Design",
@@ -409,19 +391,13 @@ const Portfolio: React.FC = () => {
               <motion.div
                 key={project.id}
                 layout
-                initial={{ opacity: 0, scale: 0.8, rotateX: 20, rotateY: -25, rotateZ: 5 }}
-                animate={{ opacity: 1, scale: 1, rotateX: 20, rotateY: -25, rotateZ: 5 }}
-                exit={{ opacity: 0, scale: 0.8, rotateX: 20, rotateY: -25, rotateZ: 5 }}
-                transition={{ duration: 0.5, type: "spring", bounce: 0.4 }}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.8 }}
+                transition={{ duration: 0.4 }}
                 className="portfolio-card glass-card"
                 onClick={() => setSelectedProject(project)}
-                whileHover={{ 
-                  y: -15, 
-                  scale: 1.05, 
-                  rotateX: 0, 
-                  rotateY: 0, 
-                  rotateZ: 0 
-                }}
+                whileHover={{ y: -10 }}
               >
                 <div className="portfolio-img-wrapper">
                   <img src={project.image} alt={project.title} className="portfolio-img" />
@@ -488,11 +464,11 @@ const Portfolio: React.FC = () => {
                 </div>
 
                 <div className="modal-actions">
-                  <a 
-                    href={selectedProject.liveUrl || '#'} 
+                  <a
+                    href={selectedProject.liveUrl || '#'}
                     target={selectedProject.liveUrl ? "_blank" : "_self"}
                     rel="noopener noreferrer"
-                    className="btn btn-primary" 
+                    className="btn btn-primary"
                     style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     onClick={(e) => {
                       if (!selectedProject.liveUrl) {
@@ -503,11 +479,11 @@ const Portfolio: React.FC = () => {
                   >
                     <ExternalLink size={18} style={{ marginRight: '8px' }} /> Live Preview
                   </a>
-                  <a 
-                    href={selectedProject.githubUrl || '#'} 
+                  <a
+                    href={selectedProject.githubUrl || '#'}
                     target={selectedProject.githubUrl ? "_blank" : "_self"}
                     rel="noopener noreferrer"
-                    className="btn btn-outline" 
+                    className="btn btn-outline"
                     style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     onClick={(e) => {
                       if (!selectedProject.githubUrl) {
