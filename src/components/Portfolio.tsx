@@ -8,12 +8,21 @@ import webProjectImg from '../assets/web_project.png';
 import mobileProjectImg from '../assets/mobile_project.png';
 import vibeProjectImg from '../assets/vibe_project.png';
 import presentationProjectImg from '../assets/presentation_project.png';
+import sevenDanceImg from '../assets/seven_dance_mockup.jpg';
+import investorDeckImg from '../assets/investor_deck_mockup.png';
+import realEstateDeckImg from '../assets/real_estate_deck_mockup.png';
+import taskManagementImg from '../assets/task_management_mockup.png';
+import chatAppImg from '../assets/chat_application_mockup.png';
+import aiChatbotImg from '../assets/ai_chatbot_mockup.png';
+import automationImg from '../assets/automation_workflow_mockup.png';
 import jumpbotImg from '../assets/jumpbot_mockup.png';
 import jumpbotFullImg from '../assets/jumpbot_fullpage.png';
 import nikeMockupImg from '../assets/nike_mockup.png';
 import nikeFullImg from '../assets/nike_fullpage.png';
 import bookAppImg from '../assets/book_app_mockup.png';
 import webDesignImg from '../assets/webdesign_mockup.png';
+import hotohImg from '../assets/hotoh_mockup.jpg';
+import expertImg from '../assets/expert_mockup.jpg';
 import foodNinjaImg from '../assets/foodninja_mockup.png';
 import sneakerShopImg from '../assets/sneaker_shop_mockup.png';
 import travelBookingImg from '../assets/travel_booking_mockup.png';
@@ -59,7 +68,35 @@ const Portfolio: React.FC = () => {
 
   const projects: Project[] = [
     {
+      id: 35,
+      title: "Seven Dance School",
+      category: "Web Development",
+      description: "A beautiful, premium digital brand experience for a modern dance fitness and choreography studio.",
+      fullDescription: "Designed an interactive, multi-layered visual website for 'Seven Dance School'. This web platform highlights various fitness and choreography classes with a pristine layout paired with stylish, fanned-out presentation mockups. Features include an interactive Class Schedule, Choreography galleries, Instructor Profiles, and smooth scrolling aesthetics designed perfectly for engaging potential students across all devices.",
+      image: sevenDanceImg,
+      tools: ["React", "Framer Motion", "CSS Modules", "Figma"]
+    },
+    {
+      id: 34,
+      title: "Hotoh Business Agency",
+      category: "Web Development",
+      description: "A clean, modern light-theme website for a business consulting and digital agency.",
+      fullDescription: "Designed 'Hotoh', a comprehensive and ultra-modern business development agency website. The design features a pristine white and vibrant royal blue color palette to inspire trust and professionalism. The long-scroll layout seamlessly guides users from the Hero section ('Grow Your Business Online') down through the About team highlights, a detailed Services grid (SEO, Web Design, Marketing, Development), a minimalistic Portfolio showcase, and an integrated interactive Contact section.",
+      image: hotohImg,
+      tools: ["React", "Tailwind CSS", "Figma", "Responsive Design"]
+    },
+    {
+      id: 33,
+      title: "Expert Digital Marketing Agency",
+      category: "Web Development",
+      description: "A dark-themed, highly responsive marketing agency website built for lead generation.",
+      fullDescription: "Designed an engaging digital marketing agency website featuring a striking dark aesthetic contrasted with energetic red branding. The multi-device responsive layout scales perfectly across desktop laptops, tablets, and smartphones. Key features include a sleek transparent navigation bar, structured service grids ('Lead Generation', 'Design and Development', 'Strategy', 'Tracking'), and optimized call-to-action buttons designed to maximize conversions.",
+      image: expertImg,
+      tools: ["React", "CSS Modules", "Responsive Design", "Figma"]
+    },
+    {
       id: 32,
+
       title: "Real Estate Pitch Deck",
       category: "Presentation Design",
       description: "A sleek, minimal real estate presentation showcasing luxury properties, design concepts, and investment plans.",
@@ -304,7 +341,7 @@ const Portfolio: React.FC = () => {
       category: "Mobile App",
       description: "Clean UI with productivity features and real-time sync.",
       fullDescription: "A powerful task management application featuring a clean, distraction-free UI. It includes robust productivity features, real-time sync across devices, and instant push notifications to keep users on track.",
-      image: mobileProjectImg,
+      image: taskManagementImg,
       tools: ["React Native", "Firebase", "Redux", "Node.js"]
     },
     {
@@ -313,7 +350,7 @@ const Portfolio: React.FC = () => {
       category: "Mobile App",
       description: "Messaging system with modern UX and smooth interface.",
       fullDescription: "A full-fledged messaging system boasting a highly modern UX. Emphasizes a smooth, buttery responsive interface with end-to-end encryption, group chats, and media sharing capabilities.",
-      image: mobileProjectImg,
+      image: chatAppImg,
       tools: ["Flutter", "Dart", "WebSockets", "Supabase"]
     },
     {
@@ -322,7 +359,7 @@ const Portfolio: React.FC = () => {
       category: "Vibe Coding",
       description: "Automated chatbot for customer support.",
       fullDescription: "Built an intelligent, context-aware automated chatbot tailored for customer support teams. It handles complex queries, connects to company knowledge bases, and successfully reduced manual workload by 40%.",
-      image: vibeProjectImg,
+      image: aiChatbotImg,
       tools: ["Python", "OpenAI", "LangChain", "FastAPI"]
     },
     {
@@ -331,7 +368,7 @@ const Portfolio: React.FC = () => {
       category: "Vibe Coding",
       description: "Automated repetitive business tasks to improve efficiency.",
       fullDescription: "Leveraged AI and custom scripting to automate highly repetitive business tasks across multiple software platforms. Significantly improved operational efficiency and entirely eliminated manual data entry errors.",
-      image: vibeProjectImg,
+      image: automationImg,
       tools: ["Node.js", "Puppeteer", "Make/Integromat", "GPT-4"]
     },
     {
@@ -340,7 +377,7 @@ const Portfolio: React.FC = () => {
       category: "Presentation Design",
       description: "Designed for startup funding with clean storytelling.",
       fullDescription: "A high-stakes presentation deck designed exclusively for startup funding rounds. Used clean, persuasive storytelling and premium custom graphics to clearly articulate the business model and market opportunity.",
-      image: presentationProjectImg,
+      image: investorDeckImg,
       tools: ["Figma", "Keynote", "Illustrator"]
     },
     {
@@ -349,7 +386,7 @@ const Portfolio: React.FC = () => {
       category: "Presentation Design",
       description: "High-end visuals focused on selling luxury properties.",
       fullDescription: "A visually breathtaking presentation leveraging high-end architectural visuals. Designed to sell luxury properties by emphasizing location benefits, premium amenities, and investment potential through stunning layouts.",
-      image: presentationProjectImg,
+      image: realEstateDeckImg,
       tools: ["PowerPoint", "Photoshop", "After Effects"]
     }
   ];
