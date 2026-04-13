@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Rocket, DollarSign, Zap, BarChart } from 'lucide-react';
+import { Rocket, DollarSign, Zap } from 'lucide-react';
 import './Results.css';
 
 const Results: React.FC = () => {
@@ -22,12 +22,6 @@ const Results: React.FC = () => {
       icon: <Zap size={32} />,
       text: "Built fast, scalable apps with smooth user experiences",
       delay: 0.2
-    },
-    {
-      id: 4,
-      icon: <BarChart size={32} />,
-      text: "Designed presentations that secured deals and investments",
-      delay: 0.3
     }
   ];
 

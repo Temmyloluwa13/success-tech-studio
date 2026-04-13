@@ -49,7 +49,6 @@ const Footer: React.FC = () => {
                 <li><a href="#services">Web Development</a></li>
                 <li><a href="#services">Mobile Apps</a></li>
                 <li><a href="#services">Vibe Coding</a></li>
-                <li><a href="#services">Presentation Design</a></li>
               </ul>
             </div>
           </div>

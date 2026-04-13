@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Layout, Smartphone, Bot, MonitorPlay, ArrowRight } from 'lucide-react';
+import { Layout, Smartphone, Bot, ArrowRight } from 'lucide-react';
 import './Services.css';
 
 const Services: React.FC = () => {
@@ -28,14 +28,6 @@ const Services: React.FC = () => {
       desc: "Smart automation, AI chatbots, and next-gen digital solutions.",
       benefits: ["Rapid Prototyping", "Prompt Engineering", "Custom AI Workflows", "Agentic Development"],
       delay: 0.2
-    },
-    {
-      id: "presentation",
-      title: "Presentation Design",
-      icon: <MonitorPlay size={32} />,
-      desc: "Professional pitch decks and presentations that impress and persuade.",
-      benefits: ["Investor Pitch Decks", "Data Storytelling", "Cinematic Animations", "Custom 3D Graphics"],
-      delay: 0.3
     }
   ];
 

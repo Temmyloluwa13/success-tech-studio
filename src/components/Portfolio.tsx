@@ -7,10 +7,7 @@ import './Portfolio.css';
 import webProjectImg from '../assets/web_project.png';
 import mobileProjectImg from '../assets/mobile_project.png';
 import vibeProjectImg from '../assets/vibe_project.png';
-import presentationProjectImg from '../assets/presentation_project.png';
 import sevenDanceImg from '../assets/seven_dance_mockup.jpg';
-import investorDeckImg from '../assets/investor_deck_mockup.png';
-import realEstateDeckImg from '../assets/real_estate_deck_mockup.png';
 import taskManagementImg from '../assets/task_management_mockup.png';
 import chatAppImg from '../assets/chat_application_mockup.png';
 import aiChatbotImg from '../assets/ai_chatbot_mockup.png';
@@ -39,13 +36,6 @@ import cryptohubThumbnailImg from '../assets/cryptohub_thumbnail.png';
 import cryptohubFullImg from '../assets/cryptohub_fullpage.png';
 import flexitThumbnailImg from '../assets/flexit_thumbnail.png';
 import flexitFullImg from '../assets/flexit_fullpage.png';
-import evolveaiThumbnailImg from '../assets/evolveai_thumbnail.png';
-import evolveaiFullImg from '../assets/evolveai_fullpage.png';
-import skandinavianImg from '../assets/skandinavian_presentation.png';
-import marketingPlanImg from '../assets/marketing_plan_presentation.png';
-import companyProfileImg from '../assets/company_profile_presentation.png';
-import architectureImg from '../assets/architecture_presentation.png';
-import realEstateImg from '../assets/realestate_presentation.png';
 
 interface Project {
   id: number;
@@ -64,7 +54,7 @@ const Portfolio: React.FC = () => {
   const [filter, setFilter] = useState('All');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const categories = ['All', 'Web Development', 'Mobile App', 'Vibe Coding', 'Presentation Design'];
+  const categories = ['All', 'Web Development', 'Mobile App', 'Vibe Coding'];
 
   const projects: Project[] = [
     {
@@ -93,62 +83,6 @@ const Portfolio: React.FC = () => {
       fullDescription: "Designed an engaging digital marketing agency website featuring a striking dark aesthetic contrasted with energetic red branding. The multi-device responsive layout scales perfectly across desktop laptops, tablets, and smartphones. Key features include a sleek transparent navigation bar, structured service grids ('Lead Generation', 'Design and Development', 'Strategy', 'Tracking'), and optimized call-to-action buttons designed to maximize conversions.",
       image: expertImg,
       tools: ["React", "CSS Modules", "Responsive Design", "Figma"]
-    },
-    {
-      id: 32,
-
-      title: "Real Estate Pitch Deck",
-      category: "Presentation Design",
-      description: "A sleek, minimal real estate presentation showcasing luxury properties, design concepts, and investment plans.",
-      fullDescription: "Designed a clean and sophisticated real estate pitch deck for a premium property agency. The presentation uses a minimalist blue and white layout with crisp architectural photography of modern buildings and luxury interiors. Key slides include: 'We Create A New Real Estate For VIP Clients', Real Estate Design Concept, The Founder, Our Mission, Luxury Property For Living Room, Every One Has Their Own Dream House, Smart Choice For Your Living, and The Plan — complete with metric highlights such as 80+ projects and 27K satisfied clients. An ideal deck for presenting premium property portfolios to high-net-worth investors.",
-      image: realEstateImg,
-      tools: ["PowerPoint", "Figma", "Photoshop", "Illustrator"]
-    },
-    {
-      id: 31,
-      title: "Architecture Pitch Deck",
-      category: "Presentation Design",
-      description: "A sleek monochrome architecture firm presentation with bold black-and-white photography and editorial slide layouts.",
-      fullDescription: "Designed a premium architecture firm pitch deck with a striking monochrome aesthetic — deep charcoal blacks paired with clean off-white cream tones throughout. The presentation covers all critical firm-facing slides: an Introduction, Vision & Mission, Portfolio Showcase (with Residential, Commercial, and Institutional projects), Design Process steps, Our Team with headshots, Partner companies, Awards & Recognition, Quality Assurance & Compliance, Future Directions, and a Contact page. Every slide uses dramatic real architectural photography to communicate scale, innovation, and design mastery.",
-      image: architectureImg,
-      tools: ["PowerPoint", "Figma", "Photoshop", "Illustrator"]
-    },
-    {
-      id: 30,
-      title: "Company Profile Pitch Deck",
-      category: "Presentation Design",
-      description: "A clean corporate company profile presentation in bold red and white with professional photography and structured layouts.",
-      fullDescription: "Designed a polished corporate company profile pitch deck for 'Liceria & Co.' built around a sharp red, white, and soft pink palette. The presentation spans all key business communication slides: a bold Company Profile cover, Mission & Vision, Our Team with professional headshots, Goals, The Process numbered workflow, Achievements, Our Service breakdown, Analysis insights, a Contact Us page, and a clean 'Thank You' closing slide. Real corporate photography is used throughout for maximum credibility and professionalism.",
-      image: companyProfileImg,
-      tools: ["PowerPoint", "Figma", "Photoshop", "Illustrator"]
-    },
-    {
-      id: 29,
-      title: "Marketing Plan Pitch Deck",
-      category: "Presentation Design",
-      description: "A vibrant gradient marketing plan presentation with bold orange-to-purple slides covering strategy, budget, and campaign goals.",
-      fullDescription: "Designed a bold, high-energy corporate marketing plan pitch deck radiating a vivid orange-to-purple gradient identity. The deck covers all critical marketing pillars: an Overview with campaign goals, a full Branding slide, Budget breakdowns with donut-chart infographics, a Marketing Channels analysis, KPI / Key Performance Indicators section, a Marketing Mix comparison table, User/Buyer persona profiles, Campaign Goals, Schedule & Deadline timeline, and a stylish 'Thank You' closing slide. The warm gradient palette ensures maximum visual engagement across every slide.",
-      image: marketingPlanImg,
-      tools: ["PowerPoint", "Figma", "Illustrator", "Photoshop"]
-    },
-    {
-      id: 28,
-      title: "Skandinavian Home Pitch Deck",
-      category: "Presentation Design",
-      description: "A clean, warm Scandinavian interior design presentation with elegant beige tones and editorial slide layouts.",
-      fullDescription: "Crafted 'Skandinavian Home', a sophisticated editorial-style pitch deck for a premium interior design studio. The presentation features a warm, neutral palette of creams, tans, and light grays paired with stunning real interior photography of modern wood-toned Scandinavian living spaces. Key slides include an Introduction, Color Tone swatches, Materials overview, Interiors gallery, Customization Options, Client Testimonials, Home Design breakdown, and a compelling Call to Action—all arranged cohesively in a clean, minimalist layout.",
-      image: skandinavianImg,
-      tools: ["PowerPoint", "Figma", "Photoshop", "Illustrator"]
-    },
-    {
-      id: 27,
-      title: "EvolveAI Pitch Deck",
-      category: "Presentation Design",
-      description: "A futuristic and highly professional corporate presentation design for an AI technology company.",
-      fullDescription: "Designed 'EvolveAI', a premium PowerPoint pitch deck layout aimed at technology startups and AI agencies. The presentation features a striking dark theme offset by vibrant neon purple typography and energetic 3D robotic/VR elements. Layouts include cleanly structured 'Pricing Plan' tables, detailed 'Our Services' grids, and visually engaging 'Team' slides that maintain investor interest. Designed to convey cutting-edge innovation while retaining strong corporate structure.",
-      image: evolveaiThumbnailImg,
-      fullImage: evolveaiFullImg,
-      tools: ["PowerPoint", "Figma", "Illustrator", "Photoshop", "3D Modeling"]
     },
     {
       id: 26,
@@ -370,24 +304,6 @@ const Portfolio: React.FC = () => {
       fullDescription: "Leveraged AI and custom scripting to automate highly repetitive business tasks across multiple software platforms. Significantly improved operational efficiency and entirely eliminated manual data entry errors.",
       image: automationImg,
       tools: ["Node.js", "Puppeteer", "Make/Integromat", "GPT-4"]
-    },
-    {
-      id: 8,
-      title: "Investor Pitch Deck",
-      category: "Presentation Design",
-      description: "Designed for startup funding with clean storytelling.",
-      fullDescription: "A high-stakes presentation deck designed exclusively for startup funding rounds. Used clean, persuasive storytelling and premium custom graphics to clearly articulate the business model and market opportunity.",
-      image: investorDeckImg,
-      tools: ["Figma", "Keynote", "Illustrator"]
-    },
-    {
-      id: 9,
-      title: "Real Estate Presentation",
-      category: "Presentation Design",
-      description: "High-end visuals focused on selling luxury properties.",
-      fullDescription: "A visually breathtaking presentation leveraging high-end architectural visuals. Designed to sell luxury properties by emphasizing location benefits, premium amenities, and investment potential through stunning layouts.",
-      image: realEstateDeckImg,
-      tools: ["PowerPoint", "Photoshop", "After Effects"]
     }
   ];
 

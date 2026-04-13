@@ -7,13 +7,11 @@ import './Hero.css';
 import slideWeb from '../assets/banner_web.png';
 import slideMobile from '../assets/banner_mobile.png';
 import slideAi from '../assets/banner_ai.png';
-import slidePresentation from '../assets/banner_presentation.png';
 
 const slides = [
   { id: 1, image: slideWeb, alt: "Web Development" },
   { id: 2, image: slideMobile, alt: "Mobile App Development" },
-  { id: 3, image: slideAi, alt: "Vibe Coding with AI" },
-  { id: 4, image: slidePresentation, alt: "Presentation Design" }
+  { id: 3, image: slideAi, alt: "Vibe Coding with AI" }
 ];
 
 const Hero: React.FC = () => {
@@ -82,8 +80,6 @@ const Hero: React.FC = () => {
             <span className="role">Mobile App Developer</span>
             <span className="divider">|</span>
             <span className="role">Vibe Coder</span>
-            <span className="divider">|</span>
-            <span className="role">Presentation Designer</span>
           </motion.div>
 
           <motion.div 

@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Globe, Smartphone, BrainCircuit, MonitorPlay, CheckCircle2 } from 'lucide-react';
+import { Globe, Smartphone, BrainCircuit, CheckCircle2 } from 'lucide-react';
 import './Skills.css';
 
 const Skills: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState(0);
-
   const categories = [
     { name: "Web Development", icon: <Globe size={20} /> },
     { name: "Mobile Development", icon: <Smartphone size={20} /> },
-    { name: "Vibe Coding", icon: <BrainCircuit size={20} /> },
-    { name: "Presentation Design", icon: <MonitorPlay size={20} /> },
+    { name: "Vibe Coding", icon: <BrainCircuit size={20} /> }
   ];
 
   const skillsData = [
@@ -34,13 +32,6 @@ const Skills: React.FC = () => {
       { name: "Cursor / Copilot", level: 98 },
       { name: "Workflow Setup", level: 85 },
       { name: "Rapid Prototyping", level: 95 },
-    ],
-    [
-      { name: "Pitch Decks", level: 98 },
-      { name: "Business Presentations", level: 95 },
-      { name: "Figma / Canva", level: 90 },
-      { name: "Visual Storytelling", level: 95 },
-      { name: "Data Visualization", level: 88 },
     ]
   ];
 

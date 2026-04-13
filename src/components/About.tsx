@@ -77,7 +77,7 @@ const About: React.FC = () => {
               I am <strong>Success Bolorunde Temiloluwa</strong>, the creative force behind <strong>Success Tech Studio</strong>. As a multi-disciplined tech professional, I blur the lines between development and design to deliver truly remarkable digital experiences.
             </p>
             <p className="about-bio">
-              My approach combines strong problem-solving abilities with an obsessive focus on results and user experience. Whether it's architecting a scalable web application, forging an intuitive mobile interface, automating workflows with AI (Vibe Coding), or designing pixel-perfect pitch decks, I bring a unique holistic perspective to every project.
+              My approach combines strong problem-solving abilities with an obsessive focus on results and user experience. Whether it's architecting a scalable web application, forging an intuitive mobile interface, or automating workflows with AI (Vibe Coding), I bring a unique holistic perspective to every project.
             </p>
             <div className="about-cta">
               <a href="#contact" className="btn btn-primary btn-glow">Let's Talk</a>

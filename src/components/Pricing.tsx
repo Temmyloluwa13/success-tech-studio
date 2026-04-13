@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MonitorPlay, Bot, Smartphone, Layout, ArrowRight } from 'lucide-react';
+import { Bot, Smartphone, Layout, ArrowRight } from 'lucide-react';
 import './Pricing.css';
 
 const Pricing: React.FC = () => {
@@ -25,13 +25,6 @@ const Pricing: React.FC = () => {
       price: "Scoped",
       desc: "Based on requirements",
       icon: <Bot size={24} />
-    },
-    {
-      id: 4,
-      title: "Presentations",
-      price: "Flexible",
-      desc: "Pricing model",
-      icon: <MonitorPlay size={24} />
     }
   ];
 
