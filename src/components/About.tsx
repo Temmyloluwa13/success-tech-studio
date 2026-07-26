@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Terminal, Users, Award, Briefcase } from 'lucide-react';
+import profileImg from '../assets/profile1.jpg';
 import './About.css';
 
 const Counter: React.FC<{ end: number; prefix?: string; suffix?: string; duration?: number }> = ({ end, prefix = "", suffix = "", duration = 2000 }) => {
@@ -58,7 +59,7 @@ const About: React.FC = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, type: "spring" }}
           >
-            <img src="/src/assets/profile1.jpg" alt="Success Bolorunde Temiloluwa" className="about-image" />
+            <img src={profileImg} alt="Success Bolorunde Temiloluwa" className="about-image" />
             <div className="about-image-glow"></div>
           </motion.div>
 
